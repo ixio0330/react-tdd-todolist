@@ -30,6 +30,8 @@ $ npm i
 $ npm start
 ```
 
+어플리케이션은 http://localhost:3000에서 실행됩니다.
+
 <h3>Getting Test</h3>
 
 테스를 실행시키기 위한 명령어입니다. 
