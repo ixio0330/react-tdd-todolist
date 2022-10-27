@@ -1,10 +1,10 @@
 import { render, screen } from "@testing-library/react";
 import userEvent from '@testing-library/user-event';
-import TodoFrom from "../components/todoFrom";
+import TodoForm from "../components/todoForm";
 
-describe('<TodoFrom />', () => {
+describe('<TodoForm />', () => {
   test('할 일을 입력해야 추가 버튼이 활성화된다.', async () => {
-    render(<TodoFrom />);
+    render(<TodoForm />);
     const todoInput = screen.getByRole('textbox');
     const addButton = screen.getByRole('button', { name: '추가' });
     expect(addButton).toBeDisabled();
@@ -14,7 +14,7 @@ describe('<TodoFrom />', () => {
   });
 
   test('할 일을 입력하고 추가 버튼을 누르면 할 일을 입력받는 창이 빈 값이 된다.', async () => {
-    render(<TodoFrom onAddTodo={(todo) => {}} />);
+    render(<TodoForm onAddTodo={(todo) => {}} />);
     const todoInput = screen.getByRole('textbox');
     const addButton = screen.getByRole('button', { name: '추가' });
     expect(addButton).toBeDisabled();
