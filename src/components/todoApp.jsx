@@ -1,6 +1,6 @@
 import { useRef, useState } from "react"
 
-import TodoFrom from "./todoFrom";
+import TodoForm from "./todoForm";
 import TodoList from "./todoList";
 
 export default function TodoApp() {
@@ -22,7 +22,7 @@ export default function TodoApp() {
   }
   return (
     <>
-      <TodoFrom onAddTodo={onAddTodo} />
+      <TodoForm onAddTodo={onAddTodo} />
       <TodoList todos={todos} onRemoveTodo={onRemoveTodo} onUpdateTodoIsDone={onUpdateTodoIsDone} />
     </>
   )
