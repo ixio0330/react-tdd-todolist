@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-export default function TodoFrom({ onAddTodo }) {
+export default function TodoForm({ onAddTodo }) {
   const [todo, setTodo] = useState('');
   function onClickAddTodo() {
     onAddTodo(todo);
