@@ -5,7 +5,11 @@ export default function TodoList({ todos, onRemoveTodo, onUpdateTodoIsDone }) {
     <ul>
       {
         todos?.map((todo) => (
-          <TodoItem key={todo.id} {...todo} onRemoveTodo={onRemoveTodo} onUpdateTodoIsDone={onUpdateTodoIsDone} />
+          <TodoItem 
+            key={todo.id} 
+            {...todo} 
+            onRemoveTodo={onRemoveTodo} 
+            onUpdateTodoIsDone={onUpdateTodoIsDone} />
         ))
       }
     </ul>
