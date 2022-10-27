@@ -6,6 +6,7 @@ import TodoList from "./todoList";
 export default function TodoApp() {
   const [todos, setTodos] = useState([]);
   const idRef = useRef(0);
+
   function onAddTodo(todo) {
     setTodos(todos.concat({
       id: idRef.current,
@@ -14,16 +15,23 @@ export default function TodoApp() {
     }));
     idRef.current++;
   }
+
   function onUpdateTodoIsDone(id) {
     setTodos(todos.map((todo) => todo.id === id ? {...todo, isDone: !todo.isDone} : todo));
   }
+
   function onRemoveTodo(id) {
     setTodos(todos.filter((todo) => todo.id !== id));
   }
+
   return (
     <>
       <TodoForm onAddTodo={onAddTodo} />
-      <TodoList todos={todos} onRemoveTodo={onRemoveTodo} onUpdateTodoIsDone={onUpdateTodoIsDone} />
+      <TodoList 
+        todos={todos} 
+        onRemoveTodo={onRemoveTodo} 
+        onUpdateTodoIsDone={onUpdateTodoIsDone} 
+      />
     </>
   )
 }
