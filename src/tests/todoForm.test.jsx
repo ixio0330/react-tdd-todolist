@@ -17,11 +17,7 @@ describe('<TodoForm />', () => {
     render(<TodoForm onAddTodo={(todo) => {}} />);
     const todoInput = screen.getByRole('textbox');
     const addButton = screen.getByRole('button', { name: '추가' });
-    expect(addButton).toBeDisabled();
-
     await userEvent.type(todoInput, '테스트');
-    expect(addButton).toBeEnabled();
-
     await userEvent.click(addButton);
     expect(todoInput).toHaveValue('');
   });
