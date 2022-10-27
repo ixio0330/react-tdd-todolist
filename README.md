@@ -4,7 +4,7 @@
 
 <h2>Introduce</h2>
 
-[React + TDD 투두리스트 개발하기 시리즈](https://velog.io/@seo__namu/TDD-%EC%86%8C%EA%B0%9C)는 **테스트**와 **TDD**를 처음 입문하는 프론트엔드 개발자를 위한 시리즈입니다.
+[React + TDD 투두리스트 개발하기 시리즈](https://velog.io/@seo__namu/series/React-TDD-%ED%88%AC%EB%91%90%EB%A6%AC%EC%8A%A4%ED%8A%B8-%EA%B0%9C%EB%B0%9C%ED%95%98%EA%B8%B0)는 **테스트**와 **TDD**를 처음 입문하는 프론트엔드 개발자를 위한 시리즈입니다.
 
 먼저 TDD의 개념에 대해 설명하고, React와 함께 사용되는 테스팅 라이브러리인 jest와 testing library를 소개합니다.
 
