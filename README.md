@@ -1,6 +1,6 @@
 <h1>Welcome to React + TDD 투두리스트 개발하기 👋</h1>
 
-![waving](https://capsule-render.vercel.app/api?type=waving&height=200&text=React+TDD&fontAlign=80&fontAlignY=40&color=gradient)
+![waving](https://capsule-render.vercel.app/api?type=waving&height=200&text=React+TDD&fontAlign=75&fontAlignY=40&color=gradient)
 
 <h2>Introduce</h2>
 
